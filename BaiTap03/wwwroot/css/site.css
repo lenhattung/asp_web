@@ -60,3 +60,8 @@ footer {
         height: auto;
     }
 }
+
+
+table, th, td {
+    border: 1px solid;
+}
