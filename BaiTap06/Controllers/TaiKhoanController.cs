@@ -12,10 +12,10 @@ namespace BaiTap06.Controllers
 
         public IActionResult DangKy(TaiKhoanViewModel taikhoan)
         {
-            //if (taikhoan != null && taikhoan.Password !=null && (taikhoan.Password).Length>0)
-            //{
-            //    taikhoan.Password = taikhoan.Password + "_chuoi_ma_hoa";
-            //}
+            if (taikhoan != null && taikhoan.Password != null && (taikhoan.Password).Length > 0)
+            {
+                taikhoan.Password = taikhoan.Password + "_chuoi_ma_hoa";
+            }
 
             return View(taikhoan);
         }
